@@ -1,4 +1,4 @@
-<!--Página de inicio-->
+<!--Página de detalle o visualización del producto-->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -25,99 +25,51 @@
 <script src="https://kit.fontawesome.com/69f2dad0e2.js" crossorigin="anonymous"></script>
 
 <!--Título de la página-->
-<title>Ubicación</title>
+<title>Producto</title>
 <!--Incluyendo keywords-->
 <meta name="description" content="Be Scandi es una marca de moda de Chile, 
-orientada a que puedas crear tu armario cápsula. Compra lo último en tendencia con nosotras.">
+orientada a que puedas crear tu armario cápsula. Descubre lo último en tendencia aquí.">
 </head>
 
 <!--Encabezado-->
 <body>
-  <header>
-  <div class="grid-container-bannerlogo"> <!--Contenedor anuncio-->
-  <img src="assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
-  </header>
+<header>
+<div class="grid-container-bannerlogo"> <!--Contenedor anuncio-->
+<img src="assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
+</header>
+</div>
+
+<!--Navegación-->
+    <section>
+      <nav> 
+        <ul class="menu"> 
+        <li class="item"><a href="index.html">Inicio</a></li> 
+        <li class="item"><a href="nosotras.html">Nosotras</a></li> 
+        <li class="item"><a href="contacto.html">Contacto</a></li> 
+        <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
+        <li class="item"><a href="productos.html">Productos</a></li> 
+        <li class="item button"><a href="accede.html">Accede</a></li> 
+        <li class="item button secondary"><a href="registro.html">Regístrate</a></li> 
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
+      </section>
+
+<!--Íconos-->
+<div class="menu-bar">
+    <i class="fa-solid fa-bars" style="color: #ebebeb"></i>
+    </div>
+    </nav>
+
+<!--Detalle del producto!-->
+
+<div class="card">
+    <img src="assets/producto3.png" alt="Top Sol" style="width:100%">
+    <h1>Top Sol</h1>
+    <p class="price">$12.990</p>
+    <p>Vestido de verano disponible en color verde.</p>
+    <p><button>Añadir al carro</button></p>
   </div>
-  
-  <!--Navegación-->
-      <section>
-        <nav> 
-          <ul class="menu"> 
-          <li class="item"><a href="index.html">Inicio</a></li> 
-          <li class="item"><a href="nosotras.html">Nosotras</a></li> 
-          <li class="item"><a href="contacto.html">Contacto</a></li> 
-          <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
-          <li class="item"><a href="productos.html">Productos</a></li> 
-          <li class="item button"><a href="accede.html">Accede</a></li> 
-          <li class="item button secondary"><a href="registro.html">Regístrate</a></li> 
-          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
-        </section>
-  
-  <!--Íconos-->
-  <div class="menu-bar">
-      <i class="fa-solid fa-bars" style="color: #ebebeb"></i>
-      </div>
-      </nav>
 
-<!--Banner título-->
-<img src="assets/title6.png" width="200px" height="200px" class="responsive">
-
-<!--Incluyendo un header-->
-<div class="header4">
-<h1>Visítanos</h1>
-<p>Crea tu armario cápsula ya</p>
-</div>
-
-<!--Mapa-->
-
-<div class="div3">
-<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.019122597817!2d-70.61441618527603!3d-33.42274580347615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6664c4ff69%3A0x663c65d6e0c96044!2sOrrego%20Luco%2023%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647041519599!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-</div>
-</body>
-</body>
-
-<!--Javascript-->
-<!--Popup-->
-
-<script>
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  </script>
-
-  <!--Javascript-->
-<!--Para desplegar el menú-->
-<script>
-  const toggle = document.querySelector(".toggle");
-  const menu = document.querySelector(".menu");
-  const items = document.querySelectorAll(".item");
-  
-  /*Móvil*/
-  function toggleMenu() {
-  if (menu.classList.contains("active")) {
-  menu.classList.remove("active");
-  toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-  } else {
-  menu.classList.add("active");
-  toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-  }
-  }
-  
-  /*Eventos*/
-  toggle.addEventListener("click", toggleMenu, false);
-  for (let item of items) {
-  if (item.querySelector(".submenu")) {
-  item.addEventListener("click", toggleItem, false);
-  }
-  item.addEventListener("keypress", toggleItem, false);
-  }
-  document.addEventListener("click", closeSubmenu, false);
-  </script>
-   
-
-<!--Footer-->
+  <!--Footer-->
 <footer>
 
   <!--Sección izquierda-->
@@ -174,7 +126,47 @@ orientada a que puedas crear tu armario cápsula. Compra lo último en tendencia
   </form>
   </div>
   </div>
-</div>
-</footer>
-</body>
-</html>
+  
+  <!--Última sección-->
+  <div class="bottom">
+  <p>Todos los derechos reservados © 2022 <a href="#">Be Scandi</a></p>
+  
+  <!--Javascript-->
+  <!--Popup-->
+  
+  <script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+    <!--Javascript-->
+<!--Para desplegar el menú-->
+<script>
+  const toggle = document.querySelector(".toggle");
+  const menu = document.querySelector(".menu");
+  const items = document.querySelectorAll(".item");
+  
+  /*Móvil*/
+  function toggleMenu() {
+  if (menu.classList.contains("active")) {
+  menu.classList.remove("active");
+  toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+  menu.classList.add("active");
+  toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+  }
+  
+  /*Eventos*/
+  toggle.addEventListener("click", toggleMenu, false);
+  for (let item of items) {
+  if (item.querySelector(".submenu")) {
+  item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+  }
+  document.addEventListener("click", closeSubmenu, false);
+  </script>
+   

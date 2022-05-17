@@ -814,6 +814,13 @@ input[type=submit]:hover {
   flex-basis: 16%;
   flex-direction: column;
   display: flex;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .product-image img {
@@ -1214,6 +1221,449 @@ a:hover {
 
   .menu li.button {
     padding-right: 0;
+  }
+}
+/*Popup*/
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Detalle*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  color: #395173;
+}
+.card h1 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.card h1 p {
+  font-size: 15px;
+}
+
+.price {
+  color: #D4696C;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #D4696C;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*Envíos*/
+.inforow h2 h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.inforow h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inforow p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.infocolumn {
+  float: left;
+  width: 75%;
+}
+
+.infocard {
+  background-color: #EBEBEB;
+  padding: 20px;
+  margin-top: 20px;
+}
+.infocard a {
+  color: #D4696C;
+}
+
+.inforow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Registro*/
+* {
+  box-sizing: border-box;
+}
+
+.containersignin {
+  color: #395173;
+  padding: 16px;
+}
+.containersignin a {
+  color: #D9751F;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerregistro {
+  padding: 16px;
+}
+.containerregistro a {
+  color: #57652A;
+  background-color: #EBEBEB;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/*Registrarse*/
+.registerbtn {
+  background-color: #D4696C;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.registerbtn:hover a {
+  color: dodgerblue;
+}
+
+/*Ingresar*/
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/*Acceso o login*/
+.formaccede {
+  border: 3px solid #EBEBEB;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background-color: #395173;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Efecto botones*/
+button:hover {
+  opacity: 0.8;
+}
+
+/*Botón de cancelar*/
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #D4696C;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Centrar el avatar*/
+.imgcontaineraccede {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/*Avatar*/
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.containeraccede {
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #395173;
+}
+
+/*Olvidé mi contraseña*/
+.psw {
+  color: #D4696C;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/*Pantallas pequeñas*/
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*Navegación optimizada para móvil*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #395173;
+  padding: 0 15px;
+}
+
+a {
+  color: #EBEBEB;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item.button {
+  padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #EBEBEB;
+}
+
+/*Menú móvil*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a {
+  padding: 15px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+.button.secondary {
+  border-bottom: 1px #EBEBEB solid;
+}
+
+/*Menú tablet*/
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+
+  /*Tablet*/
+  .menu li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+
+  .button a {
+    background: #D4696C;
+    border: 1px;
+  }
+
+  .button.secondary {
+    border: 0;
+  }
+
+  .button.secondary a {
+    background: #D9751F;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+  }
+
+  .button:not(.secondary) a:hover {
+    background: #907BBB;
+  }
+}
+/*Desktop*/
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .toggle {
+    display: none;
   }
 }
 

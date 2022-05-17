@@ -1,4 +1,4 @@
-<!--Página sobre nosotras-->
+<!--Página de registro-->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -25,117 +25,69 @@
 <script src="https://kit.fontawesome.com/69f2dad0e2.js" crossorigin="anonymous"></script>
 
 <!--Título de la página-->
-<title>Sobre nosotras</title>
+<title>Regístrate</title>
 <!--Incluyendo keywords-->
-<meta name="description" content="En Be Scandi apostamos por la sostenibilidad y el trato justo. 
-Colabora con nosotras para hacer posible un mundo mejor.">
+<meta name="description" content="Be Scandi es una marca de moda de Chile, 
+orientada a que puedas crear tu armario cápsula. Descubre lo último en tendencia aquí.">
 </head>
 
 <!--Encabezado-->
 <body>
-  <header>
-  <div class="grid-container-bannerlogo"> <!--Contenedor anuncio-->
-  <img src="assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
-  </header>
-  </div>
+<header>
+<div class="grid-container-bannerlogo"> <!--Contenedor anuncio-->
+<img src="assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
+</header>
+</div>
 
 <!--Navegación-->
-<section>
-  <nav> 
-    <ul class="menu"> 
-    <li class="item"><a href="index.html">Inicio</a></li> 
-    <li class="item"><a href="nosotras.html">Nosotras</a></li> 
-    <li class="item"><a href="contacto.html">Contacto</a></li> 
-    <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
-    <li class="item"><a href="productos.html">Productos</a></li> 
-    <li class="item button"><a href="accede.html">Accede</a></li> 
-    <li class="item button secondary"><a href="registro.html">Regístrate</a></li> 
-    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
-  </section>
+    <section>
+      <nav> 
+        <ul class="menu"> 
+        <li class="item"><a href="index.html">Inicio</a></li> 
+        <li class="item"><a href="nosotras.html">Nosotras</a></li> 
+        <li class="item"><a href="contacto.html">Contacto</a></li> 
+        <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
+        <li class="item"><a href="productos.html">Productos</a></li> 
+        <li class="item button"><a href="accede.html">Accede</a></li> 
+        <li class="item button secondary"><a href="registro.html">Regístrate</a></li> 
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
+      </section>
 
 <!--Íconos-->
 <div class="menu-bar">
-<i class="fa-solid fa-bars" style="color: #ebebeb"></i>
-</div>
-</nav>
+    <i class="fa-solid fa-bars" style="color: #ebebeb"></i>
+    </div>
+    </nav>
 
-<!--Banner título-->
-<img src="assets/title4.png" width="200px" height="200px" class="responsive"> <!--Titular-->
+<!--Registro-->
 
-<!--Incluyendo un header-->
-<div class="header2">
-<h1>Colabora con nosotras</h1>
-<p>Nos mueve la producción sostenible y el trato justo</p>
-</div>
-    
-<!--Sección sobre nosotras-->
-
-<!--Integrante-->
-
-<div class="rowsobre">
-  <div class="columnsobre">
-  <div class="cardsobre">
-  <img src="assets/sobre1.png" alt="Nina" style="width:100%" class="responsive">
-  <div class="containersobre">
-  <h2>Nina Doe</h2> <!--Nombre-->
-  <p class="titlesobre1">CEO & Fundadora</p> <!--Cargo-->
-  <p>Información sobre la persona.</p> <!--Descripción-->
-  <p>nina@bescandi.cl</p> <!--Correo-->
-  <!--Link que redirige a redactar un correo-->
-  <p><a href="mailto:nina@bescandi.cl?subject=Hola"><button class="buttonsobre1">Contactar</button></p></a>
-  </div>
-  </div>
-  </div>
-  </div>
+<form action="action_page.php">
+    <div class="containerregistro">
+      <h1>Regístrate</h1>
+      <p>Por favor, rellena el siguiente formulario:</p>
+      <hr>
   
-  <!--Integrante-->
-  <div class="columnsobre">
-  <div class="cardsobre">
-  <img src="assets/sobre2.png" alt="Barb" style="width:100%" class="responsive">
-  <div class="containersobre">
-  <h2>Barb Ross</h2>
-  <p class="titlesobre2">Comunicaciones</p>
-  <p>Información sobre la persona.</p>
-  <p>barb@bescandi.cl</p>
-  <!--Link que redirige a redactar un correo-->
-  <p><a href="mailto:barb@bescandi.cl?subject=Hola"><button class="buttonsobre2">Contactar</button></p></a>
-  </div>
-  </div>
-  </div>
-  </div>
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="¿Cuál es tu correo electrónico?" name="email" id="email" required>
   
-  <!--Integrante-->
-  <div class="columnsobre">
-  <div class="cardsobre">
-  <img src="assets/sobre3.png" alt="Liv" style="width:100%" class="responsive">
-  <div class="containersobre">
-  <h2>Liv Moss</h2>
-  <p class="titlesobre3">Artista Visual</p>
-  <p>Información sobre la persona.</p>
-  <p>liv@bescandi.cl</p>
-  <!--Link que redirige a redactar un correo-->
-  <p><a href="mailto:barb@bescandi.cl?subject=Hola"><button class="buttonsobre3">Contactar</button></p></a>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </body>
-  </body>
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Crea una contraseña segura" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repite tu contraseña</b></label>
+      <input type="password" placeholder="Vuelve a ingresar tu contraseña" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+  
+      <a href="terminos.html"><p>Al crear una cuenta, estás aceptando nuestros términos y condiciones.</a></p>
+      <button type="submit" class="registerbtn">Regístrate :)</button>
+    </div>
+  
+    <div class="containersignin">
+      <p>¿Ya tienes una cuenta?</p>
+      <a href="accede.html"><p>Ingresa</p></a>
+    </div>
+  </form>
 
 <!--Javascript-->
-<!--Popup-->
-
-<script>
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  </script>
-
-  <!--Javascript-->
 <!--Para desplegar el menú-->
 <script>
   const toggle = document.querySelector(".toggle");
@@ -162,8 +114,7 @@ Colabora con nosotras para hacer posible un mundo mejor.">
   item.addEventListener("keypress", toggleItem, false);
   }
   document.addEventListener("click", closeSubmenu, false);
-  </script>
-   
+  </script>  
 
 <!--Footer-->
 <footer>
@@ -230,3 +181,4 @@ Colabora con nosotras para hacer posible un mundo mejor.">
 </footer>
 </body>
 </html>
+  
