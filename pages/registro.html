@@ -1,4 +1,4 @@
-<!--Página de información-->
+<!--Página de registro-->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -9,11 +9,11 @@
 <meta charset="UFT-8">
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="assets/Logo 1-1.png" type="image/x-icon"> <!--Logo pequeño-->
+<link rel="shortcut icon" href="..\assets/Logo 1-1.png" type="image/x-icon"> <!--Logo pequeño-->
 
 <!--Hoja de estilos-->
  
-<link rel="stylesheet" href="demosass\css\destino.css">
+<link rel="stylesheet" href="..\demosass\css\destino.css">
 
 <!--Google Fonts-->
 
@@ -25,7 +25,7 @@
 <script src="https://kit.fontawesome.com/69f2dad0e2.js" crossorigin="anonymous"></script>
 
 <!--Título de la página-->
-<title>Envíos</title>
+<title>Regístrate</title>
 <!--Incluyendo keywords-->
 <meta name="description" content="Be Scandi es una marca de moda de Chile, 
 orientada a que puedas crear tu armario cápsula. Descubre lo último en tendencia aquí.">
@@ -35,23 +35,23 @@ orientada a que puedas crear tu armario cápsula. Descubre lo último en tendenc
 <body>
 <header>
 <div class="grid-container-bannerlogo"> <!--Contenedor anuncio-->
-<img src="assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
+<img src="..\assets/envio1.png" height="100px" width="150px" class="responsive"> <!--Anuncio-->
 </header>
 </div>
 
 <!--Navegación-->
-    <section>
-      <nav> 
-        <ul class="menu"> 
-        <li class="item"><a href="index.html">Inicio</a></li> 
-        <li class="item"><a href="nosotras.html">Nosotras</a></li> 
-        <li class="item"><a href="contacto.html">Contacto</a></li> 
-        <li class="item"><a href="ubicacion.html">Ubicación</a></li> 
-        <li class="item"><a href="productos.html">Productos</a></li> 
-        <li class="item button"><a href="accede.html">Accede</a></li> 
-        <li class="item button secondary"><a href="registro.html">Regístrate</a></li> 
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
-      </section>
+<section>
+  <nav> 
+    <ul class="menu"> 
+    <li class="item"><a href="..\index.html">Inicio</a></li> 
+    <li class="item"><a href="..\pages\nosotras.html">Nosotras</a></li> 
+    <li class="item"><a href="..\pages\contacto.html">Contacto</a></li> 
+    <li class="item"><a href="..\pages\ubicacion.html">Ubicación</a></li> 
+    <li class="item"><a href="..\pages\productos.html">Productos</a></li> 
+    <li class="item button"><a href="..\pages\accede.html">Accede</a></li> 
+    <li class="item button secondary"><a href="..\pages\registro.html">Regístrate</a></li> 
+    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> </ul> </nav> <!--Menú desplegable-->
+  </section>
 
 <!--Íconos-->
 <div class="menu-bar">
@@ -59,46 +59,35 @@ orientada a que puedas crear tu armario cápsula. Descubre lo último en tendenc
     </div>
     </nav>
 
-<!--Información-->
-<div class="inforow">
-    <div class="infocolumn">
-      <div class="infocard">
+<!--Registro-->
 
- <h2><b><u>Envíos</u></b></h2>
- <h5>Última modificación: 16 de mayo de 2022</h5>
- <p>Los envíos demorarán en su tiempo de preparación un <u>máximo de 5 días hábiles.</u> 
- Estos tiempos se deben a la alta demanda que enfrenta nuestro sitio web, así como también a la baja dotación
-debido a las <a>medidas preventivas de contacto social.</a></p>
-
-<p>En cuanto a los <u>tiempos de envío</u>, dentro de la Región Metropolitana se trabajará con servicios de repartos particular.
-Estos envíos demoran de <i>1 a 2 días hábiles</i> en llegar a su destino pasado el período de preparación.
-El costo fijo es de <a>$2.990</a> dentro de toda la Región Metropolitana.</p>
-
-<h2><b><u>Envíos a regiones</u></b></h2>
-<p>Be Scandi realiza envíos vía Blue Express a todas las regiones de Chile.</p>
-<p>Las personas que hayan realizado un pedido, y este haya sobrepasado el plazo de preparación,
-deberán escribir a <a href="mailto:hola@bescandi.cl">hola@bescandi.cl</a> para solicitar información.
-</p>
-
-<h2><b><u>Despacho a domicilio</u></b></h2>
-<p>Be Scandi no se hace cargo de factores externos que puedan afectar los plazos de envíos entregados por las distintas compañías.</p>
-<p><i>Es responsabilidad de cada cliente entregar los datos correctamente.</i></p>
-
-      </div>
-      </div>
-      </div>
+<form action="action_page.php">
+    <div class="containerregistro">
+      <h1>Regístrate</h1>
+      <p>Por favor, rellena el siguiente formulario:</p>
+      <hr>
+  
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="¿Cuál es tu correo electrónico?" name="email" id="email" required>
+  
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Crea una contraseña segura" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repite tu contraseña</b></label>
+      <input type="password" placeholder="Vuelve a ingresar tu contraseña" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+  
+      <a href="..\pages\terminos.html"><p>Al crear una cuenta, estás aceptando nuestros términos y condiciones.</a></p>
+      <button type="submit" class="registerbtn">Regístrate :)</button>
+    </div>
+  
+    <div class="containersignin">
+      <p>¿Ya tienes una cuenta?</p>
+      <a href="..\pages\accede.html"><p>Ingresa</p></a>
+    </div>
+  </form>
 
 <!--Javascript-->
-  <!--Popup-->
-  
-  <script>
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-    </script>
-
-    <!--Javascript-->
 <!--Para desplegar el menú-->
 <script>
   const toggle = document.querySelector(".toggle");
@@ -125,9 +114,8 @@ deberán escribir a <a href="mailto:hola@bescandi.cl">hola@bescandi.cl</a> para 
   item.addEventListener("keypress", toggleItem, false);
   }
   document.addEventListener("click", closeSubmenu, false);
-  </script>
-   
-  
+  </script>  
+
 <!--Footer-->
 <footer>
 
@@ -155,12 +143,12 @@ deberán escribir a <a href="mailto:hola@bescandi.cl">hola@bescandi.cl</a> para 
     
   <!--Sección del medio-->
   <div class="middle box">
-  <div class="topic">Información</div>
-  <!--Links que redirigen a páginas dentro del sitio-->
-  <div><a href="envios.html">Envíos</a></div>
-  <div><a href="cambios.html">Cambios y devoluciones</a></div>
-  <div><a href="terminos.html">Términos y condiciones</a></div>
-  </div>
+    <div class="topic">Información</div>
+    <!--Links que redirigen a páginas dentro del sitio-->
+    <div><a href="..\pages\envios.html">Envíos</a></div>
+    <div><a href="..\pages\cambios.html">Cambios y devoluciones</a></div>
+    <div><a href="..\pages\terminos.html">Términos y condiciones</a></div>
+    </div>
     
   <!--Sección de la derecha-->
   <div class="right box">
@@ -189,8 +177,8 @@ deberán escribir a <a href="mailto:hola@bescandi.cl">hola@bescandi.cl</a> para 
   <!--Última sección-->
   <div class="bottom">
   <p>Todos los derechos reservados © 2022 <a href="#">Be Scandi</a></p>
-  </div>
-  </footer>
-  </body>
-  </html>
+</div>
+</footer>
+</body>
+</html>
   
