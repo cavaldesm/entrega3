@@ -317,6 +317,10 @@ img {
   margin: auto;
 }
 
+.mySlides {
+  margin-bottom: 20px;
+}
+
 /*Botones*/
 .prev, .next {
   cursor: pointer;

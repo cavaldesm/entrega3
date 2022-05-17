@@ -298,7 +298,45 @@ orientada a que puedas crear tu armario cápsula. Descubre lo último en tendenc
 <a href=#2><i class=ion-chevron-right></i></a>
 </nav>
 </section>
-</body>
+
+  <!--Javascript-->
+  <!--Popup-->
+  
+  <script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+    <!--Javascript-->
+<!--Para desplegar el menú-->
+<script>
+  const toggle = document.querySelector(".toggle");
+  const menu = document.querySelector(".menu");
+  const items = document.querySelectorAll(".item");
+  
+  /*Móvil*/
+  function toggleMenu() {
+  if (menu.classList.contains("active")) {
+  menu.classList.remove("active");
+  toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+  menu.classList.add("active");
+  toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+  }
+  
+  /*Eventos*/
+  toggle.addEventListener("click", toggleMenu, false);
+  for (let item of items) {
+  if (item.querySelector(".submenu")) {
+  item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+  }
+  document.addEventListener("click", closeSubmenu, false);
+  </script>
 
 <!--Footer-->
 <footer>
@@ -361,43 +399,8 @@ orientada a que puedas crear tu armario cápsula. Descubre lo último en tendenc
   <!--Última sección-->
   <div class="bottom">
   <p>Todos los derechos reservados © 2022 <a href="#">Be Scandi</a></p>
-  
-  <!--Javascript-->
-  <!--Popup-->
-  
-  <script>
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-    </script>
-
-    <!--Javascript-->
-<!--Para desplegar el menú-->
-<script>
-  const toggle = document.querySelector(".toggle");
-  const menu = document.querySelector(".menu");
-  const items = document.querySelectorAll(".item");
-  
-  /*Móvil*/
-  function toggleMenu() {
-  if (menu.classList.contains("active")) {
-  menu.classList.remove("active");
-  toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-  } else {
-  menu.classList.add("active");
-  toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-  }
-  }
-  
-  /*Eventos*/
-  toggle.addEventListener("click", toggleMenu, false);
-  for (let item of items) {
-  if (item.querySelector(".submenu")) {
-  item.addEventListener("click", toggleItem, false);
-  }
-  item.addEventListener("keypress", toggleItem, false);
-  }
-  document.addEventListener("click", closeSubmenu, false);
-  </script>
+</div>
+</footer>
+</body>
+</html>
    
